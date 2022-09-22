@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click background Color Change</title>
+    <link rel="stylesheet" href="./clickBgcChange.css">
+    <script src="https://kit.fontawesome.com/97a0b6d6c9.js" crossorigin="anonymous"></script>
+</head>
+<body >
+    <div id="toHidemenu" class="toHidemenu2">
+        <div >
+    <div >
+        <nav class="navBar">
+        <i class="fa-solid fa-bars fontMenu"  id="hidemenubar" ></i>
+        <h3 class="fontMenu">Home |</h3>
+        <h4 class="fontMenu">Profile |</h4>
+        <h4 class="fontMenu"  onclick="clickedCount();"> Click Count | </h4>
+    </nav>
+    </div>
+    <div class="menubar activeMenu" id="Menuhide" >
+        <nav>
+            <h5><a href="#"> Source Code </a></h5><br>
+            <h5><a href="#"> Time Duration </a> </h5><br>
+            <h5> <a href="#"> Review </a> </h5><br>
+        </nav>
+    </div>
+    </div>
+    <div class="menubar2  activeMenu " id="menuHide2" >
+        <span> You clicked on closed monkey : <span id="closedCount"> </span> </span><br>
+        <span> you clicked on opened monkey : <span id="openedCount"> </span> </span><br>
+        <span> Total Clicks are : <span id="totalCount"> </span> </span>
+    </div>
+    
+    
+
+    <div>
+        <div> 
+            <img src="./MonkeyClosed.png" alt="MonkeyClosed" class="emoji closed active"  onclick="monkeyClose();myCount01()" id="closed" class="cM">
+            <!-- <h1 onclick="mine()" class="normaltext mytext" id="mB"> Mahesh Badankirthi </h1> -->
+        </div>
+        <div>
+            <img src="./monkey.png" class="emoji open" id="opened" onclick="monkeyOpen();myCount02()">
+        </div>
+    </div>
+    <div class="bgcPos">
+    <div class="bgdiv ">
+        <h1 style="color:black; text-align:center"> Background Color: <span id="change"> #00000</span></h1>
+        
+    </div>
+    </div><br><br>
+    
+
+</div>
+    
+
+
+    <script src="./clickBgcChange.js"></script>
+</body>
+</html>
